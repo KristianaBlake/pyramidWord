@@ -6,7 +6,7 @@ const checkPyramid = (str) => {
 		// arrange the letters in increasing frequency starting with one 
 		// and continuing without gaps - don't count spaces 
 		// and without duplicates 
-		
+
 		let word = " ";
 		let wordArr = [];
 		// let newStr = "";
@@ -14,20 +14,20 @@ const checkPyramid = (str) => {
 		// looping over the string 
 		for (let i = 0; i < str.length; i++){
 			// if the character inside the string does not equal a space, it will be stored in the variable "word"
-			if(str[i] != " "){
+			if (str[i] != " "){
 				// creating new word with no spaces
 				word += str[i]
-				// rearrange the letters in a string in order of frequency
+				// rearrange the letters in a string in order of frequency (in variable word)
 				// and without duplicates: 
-				// if (word[i]) is falsey (undefined, 0, null) 
-				// since we initialize the value of a matched character at 1
-				// that if statement will only ever be entered if the 
-				// character has been encountered and counted previously, otherwise, we initialize it 
+				// if (word[i]) is falsey (undefined, 0, null) then the value of that index
+				// has been encountered and counted previously, otherwise, we initialize it 
 				if (word[i]) {
 					word[i]++;
 				} else {
 					word[i] = 1;
 				}
+
+				//make sure there are multiple numbers of that one index (not 1 b and 1 d )
 
 				return true  
 
@@ -40,9 +40,6 @@ const checkPyramid = (str) => {
 
 			// this pushed the last word into wordArr
 			wordArr.push(word)
-
-			// check if it is a pyramid word? 
-			// make sure there are no duplicates (not 1 b and 1 d )
 
 
 		}
