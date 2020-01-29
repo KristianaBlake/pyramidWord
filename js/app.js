@@ -54,9 +54,9 @@ const checkPyramid = (str) => {
 		}
 		
 
-		} else {
-	 		return false
-	 } 
+	} else {
+	 	return false
+	} 
 
 } 
 
