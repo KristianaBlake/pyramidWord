@@ -50,4 +50,7 @@ const checkPyramid = (str) => {
 	 } 
 
 } 
+
+//calling function 
+checkPyramid()
 	
