@@ -9,7 +9,7 @@ const checkPyramid = (str) => {
 
 		let word = " ";
 		let wordArr = [];
-		// let newStr = "";
+		let newStr = "";
 
 		// looping over the string 
 		for (let i = 0; i < str.length; i++){
@@ -23,7 +23,7 @@ const checkPyramid = (str) => {
 				// this is emptying out the variable "word"
 				word = " ";
 			}
-
+		}
 		// this pushes the last letter from the word variable into
 		// variable wordArr
 		wordArr.push(word)
@@ -34,9 +34,9 @@ const checkPyramid = (str) => {
 
 			//frequency:
 			// if (word[i]) is falsey (undefined, 0, null) 
-			//then the value of that index
+			// then the value of that index
 			// has been encountered and counted previously, otherwise, 
-			//we initialize it 
+			// we initialize it 
 
 			if (wordArr[i]) {
 				wordArr[i]++;
@@ -44,15 +44,21 @@ const checkPyramid = (str) => {
 				wordArr[i] = 1;
 			}
 
+		}
+
+		// this pushes the last letter into newStr
+		newStr.push(wordArr)
+
+		for (let i = 0; i < newStr.length; i++){
 			// and without duplicates: 
-			// duplicates:
+			//duplicates:
 			// make sure there are multiple numbers of 
 			// that one index (not 1 b and 1 d )
-		}
+
+			if (newStri.includes())
 
 
 		}
-		
 
 	} else {
 	 	return false
