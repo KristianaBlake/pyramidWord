@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "watch": "webpack --progress -d --config webpack.config.js -watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
