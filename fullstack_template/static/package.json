@@ -18,10 +18,9 @@
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   },
-  "babel": {
-    "presets": [
-      "es2015",
-      "react"
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
     ]
   }
 }
